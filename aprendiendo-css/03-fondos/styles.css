@@ -1,0 +1,35 @@
+body {
+    /* background-color: #ccc;
+    background-image: url(./img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: right bottom; */
+    color: black;
+    text-align: justify;
+    text-indent: 15px;
+    /* word-spacing: 10px;
+    letter-spacing: 5px; */
+}
+
+#caja {
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgb(94, 131, 212);
+    color: white;
+    font-family: "Open Sans";
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration: line-through;
+    vertical-align: top;
+}
+
+h2 {
+    color: red;
+    background: white;
+    background-image: url(./img/img2.jpg);
+    border: 5px solid red;
+    text-align: justify;
+}

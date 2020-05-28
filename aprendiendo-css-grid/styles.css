@@ -1,0 +1,211 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+/*  */
+
+
+/* EJERCICIO COMPLETO AREAS */
+
+#webside-areas * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#webside-areas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    grid-template-areas: "lateral cabecera cabecera cabecera cabecera" "lateral menu menu menu menu" "lateral contenido contenido contenido contenido" "lateral pie pie pie pie";
+    grid-gap: 20px;
+    /* grid-column-gap: 20px;
+    grid-row-gap: 20px; */
+    width: 75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#webside-areas #cabecera {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    color: white;
+}
+
+#webside-areas #menu {
+    grid-area: menu;
+    background: lightblue;
+    color: black;
+    line-height: 70px;
+}
+
+#webside-areas #menu ul {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#webside-areas #contenido {
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
+    background: #eee;
+}
+
+#webside-areas #contenido article {
+    background: #ccc;
+    border: 1px solid #555;
+}
+
+#webside-areas #lateral {
+    grid-area: lateral;
+    background: orange;
+    color: white;
+}
+
+#webside-areas #pie-pagina {
+    grid-area: pie;
+    background: black;
+    color: white;
+}
+
+
+/* EJERCICIO COMPLETO */
+
+#webside * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#webside {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    width: 75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#webside #cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 6;
+    background: blue;
+    color: white;
+}
+
+#webside #menu {
+    grid-column: 1 / 6;
+    background: lightblue;
+    color: black;
+    line-height: 70px;
+}
+
+#webside #menu ul {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#webside #contenido {
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
+    background: #eee;
+}
+
+#webside #contenido article {
+    background: #ccc;
+    border: 1px solid #555;
+}
+
+#webside #lateral {
+    grid-column: 5 / 6;
+    background: orange;
+    color: white;
+}
+
+#webside #pie-pagina {
+    grid-column: 1 / 6;
+    background: black;
+    color: white;
+}
+
+
+/* EJEMPLOS */
+
+
+/*  */
+
+.layout {
+    width: 80%;
+    height: 600px;
+    margin: 0px auto;
+    /* Definir el (contenedor de grid) grid layout */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 3fr repeat(2, 1fr);
+    /* Espacio entre elementos grid */
+    grid-gap: 10px;
+    padding: 10px;
+    border: 3px solid orangered;
+}
+
+.layout .caja {
+    font-style: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+    background: gray;
+}
+
+.layout .red {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background: red;
+}
+
+.layout .blue {
+    background: blue;
+    grid-column: 2 / 4;
+}
+
+.layout .green {
+    background: green;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+.layout .pink {
+    background: palevioletred;
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+}
+
+.layout .orange {
+    background: orange;
+    grid-row: 3 / 5;
+}
+
+.layout .lightblue {
+    background: lightblue;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 2 / 4;
+}

@@ -1,0 +1,46 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li:first-child {
+    color: purple;
+    font-weight: bold;
+}
+
+ul li:nth-child(2) {
+    color: orange;
+    font-weight: bold;
+}
+
+ul li:last-child {
+    color: gray;
+    font-weight: bold;
+}
+
+#mi-enlace {
+    font-size: 30px;
+    color: lightsalmon;
+    ∫
+}
+
+#mi-enlace:visited {
+    color: orangered;
+}
+
+#mi-enlace:hover {
+    color: blue;
+}
+
+#mi-enlace:active {
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="text"] {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+input[type="text"]:hover {
+    border: 4px dashed red;
+}
